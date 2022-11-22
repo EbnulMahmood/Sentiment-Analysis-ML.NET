@@ -31,7 +31,7 @@ namespace SentimentAnalysis.Web.Pages
 
                 var prediction = _predictionEnginePool.Predict(input);
 
-                var sentiment = Convert.ToBoolean(prediction.PredictedLabel) ? "Not Toxic" : "Toxic";
+                var sentiment = Convert.ToBoolean(prediction.PredictedLabel) ? "Positive" : "Negative";
 
                 return Content(sentiment);
             }

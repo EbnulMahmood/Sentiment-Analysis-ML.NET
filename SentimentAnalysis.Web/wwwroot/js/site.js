@@ -22,10 +22,10 @@ const updateSentiment = () => {
     getSentiment(userInput)
         .then((sentiment) => {
             switch (sentiment) {
-                case "Not Toxic":
+                case "Positive":
                     updateMarker(100.0, sentiment);
                     break;
-                case "Toxic":
+                case "Negative":
                     updateMarker(0.0, sentiment);
                     break;
                 default:
@@ -34,4 +34,4 @@ const updateSentiment = () => {
         });
 }
 
-$("#Message").on('change input paste', updateSentiment);
+$("#btnSubmit").on('click', updateSentiment)
