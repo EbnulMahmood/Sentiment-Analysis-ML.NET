@@ -3,7 +3,6 @@
 
 // Write your JavaScript code.
 
-
 const getSentiment = (userInput) => {
     return fetch(`Index?handler=AnalyzeSentiment&text=${userInput}`)
         .then((response) => {

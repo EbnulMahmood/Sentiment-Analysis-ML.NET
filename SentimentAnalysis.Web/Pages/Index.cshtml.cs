@@ -23,15 +23,22 @@ namespace SentimentAnalysis.Web.Pages
 
         public IActionResult OnGetAnalyzeSentiment([FromQuery] string text)
         {
-            if (string.IsNullOrEmpty(text)) return Content("Neutral");
+            try
+            {
+                if (string.IsNullOrEmpty(text)) return Content("Neutral");
 
-            var input = new ModelInput { Col0 = text };
+                var input = new ModelInput { Col0 = text };
 
-            var prediction = _predictionEnginePool.Predict(input);
+                var prediction = _predictionEnginePool.Predict(input);
 
-            var sentiment = Convert.ToBoolean(prediction.PredictedLabel) ? "Not Toxic" : "Toxic";
+                var sentiment = Convert.ToBoolean(prediction.PredictedLabel) ? "Not Toxic" : "Toxic";
 
-            return Content(sentiment);
+                return Content(sentiment);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

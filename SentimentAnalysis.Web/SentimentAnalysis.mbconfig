@@ -3,7 +3,7 @@
   "DataSource": {
     "Type": "TabularFile",
     "Version": 1,
-    "FilePath": "D:\\shovan\\Test\\SentimentAnalysis\\SentimentAnalysis.Web\\Dataset\\yelp_labelled.txt",
+    "FilePath": "D:\\shovan\\dev\\SentimentAnalysis\\SentimentAnalysis.Web\\Dataset\\yelp_labelled.txt",
     "Delimiter": "\t",
     "DecimalMarker": ".",
     "HasHeader": false,
@@ -38,8 +38,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "TextClassifcationMulti",
-        "Score": 0.76982029598308666,
-        "RuntimeInSeconds": 61.364,
+        "Score": 0.67732558139534882,
+        "RuntimeInSeconds": 58.952,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2",
           "e0": {

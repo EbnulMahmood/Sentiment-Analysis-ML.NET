@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentimentAnalysis.Web", "SentimentAnalysis.Web\SentimentAnalysis.Web.csproj", "{4F2E3D06-7C3D-4817-9A9B-6FDB6E828C0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentimentAnalysis.Web", "SentimentAnalysis.Web\SentimentAnalysis.Web.csproj", "{1995A8CD-458F-41E3-B741-3C6D95D8856A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4F2E3D06-7C3D-4817-9A9B-6FDB6E828C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F2E3D06-7C3D-4817-9A9B-6FDB6E828C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F2E3D06-7C3D-4817-9A9B-6FDB6E828C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F2E3D06-7C3D-4817-9A9B-6FDB6E828C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1995A8CD-458F-41E3-B741-3C6D95D8856A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1995A8CD-458F-41E3-B741-3C6D95D8856A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1995A8CD-458F-41E3-B741-3C6D95D8856A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1995A8CD-458F-41E3-B741-3C6D95D8856A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C31DD522-3C2B-4B87-9A97-53DA9BA1E2F2}
+		SolutionGuid = {45309DBA-38EA-4BF8-8AB5-6CAEB2ED4A0E}
 	EndGlobalSection
 EndGlobal
