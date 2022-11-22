@@ -17,7 +17,7 @@ namespace SentimentAnalysis_Web
         {
             [LoadColumn(0)]
             [ColumnName(@"col0")]
-            public string Col0 { get; set; }
+            public string? Col0 { get; set; }
 
             [LoadColumn(1)]
             [ColumnName(@"col1")]
@@ -34,7 +34,7 @@ namespace SentimentAnalysis_Web
         public class ModelOutput
         {
             [ColumnName(@"col0")]
-            public string Col0 { get; set; }
+            public string? Col0 { get; set; }
 
             [ColumnName(@"col1")]
             public uint Col1 { get; set; }
@@ -43,13 +43,13 @@ namespace SentimentAnalysis_Web
             public float PredictedLabel { get; set; }
 
             [ColumnName(@"Score")]
-            public float[] Score { get; set; }
+            public float[]? Score { get; set; }
 
         }
 
         #endregion
 
-        private static string MLNetModelPath = Path.GetFullPath("SentimentAnalysis.zip");
+        private static readonly string _mLNetModelPath = Path.GetFullPath("SentimentAnalysis.zip");
 
         public static readonly Lazy<PredictionEngine<ModelInput, ModelOutput>> PredictEngine = new Lazy<PredictionEngine<ModelInput, ModelOutput>>(() => CreatePredictEngine(), true);
 
@@ -67,7 +67,7 @@ namespace SentimentAnalysis_Web
         private static PredictionEngine<ModelInput, ModelOutput> CreatePredictEngine()
         {
             var mlContext = new MLContext();
-            ITransformer mlModel = mlContext.Model.Load(MLNetModelPath, out var _);
+            ITransformer mlModel = mlContext.Model.Load(_mLNetModelPath, out var _);
             return mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
         }
     }
